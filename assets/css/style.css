@@ -1,0 +1,577 @@
+@font-face {
+    font-family: 'Amazon_thin';
+    src: url('/assets/font/Ember/AmazonEmber_Lt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amazon_medium';
+    src: url('/assets/font/Ember/Amazon-Ember-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Amazon_bold';
+    src: url('/assets/font/Ember/AmazonEmber_Bd.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amazon_thin';
+    scroll-behavior: smooth;
+}
+
+strong {
+    font-family: 'Amazon_bold';
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    color: #c60;
+}
+
+hr {
+    width: 100%;
+}
+
+main section {
+    margin-left: 30px;
+}
+
+/********************* HEADER *********************/
+header {
+    height: 110px;
+    min-width: 10;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .header_top {
+    height: 70px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* logo */
+header .header_top .logo_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+}
+
+header .header_top .logo_container span {
+    color: white;
+    font-size: 2rem;
+}
+
+header .header_top .logo_container img {
+    position: absolute;
+    width: 80px;
+    top: 64%;
+    left: 17%;
+}
+
+/* location */
+header .header_top .location {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .header_top .location span {
+    color: rgb(215, 215, 215);
+    font-size:0.81rem;
+}
+
+header .header_top .location .icon_container {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* search bar */
+header .header_top .search_bar {
+    width: 35%;
+}
+
+header .header_top .search_bar .bar_container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+} 
+
+header .header_top .search_bar .bar_container input {
+    width: 80%;
+    height: 20px;
+}
+
+header .header_top .search_bar .bar_container button {
+    height: 26px;
+    background-color: #232f3e;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header_top .search_bar .bar_container button img {
+    width: 15px
+}
+
+/* welcome */
+header .header_top .welcome {
+    width: 12%;
+}
+
+header .header_top .welcome div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+header .header_top .welcome .top span {
+    color: orange;
+    margin-left: 5px;
+}
+
+header .header_top .welcome .bottom {
+    align-items: first baseline;
+    font-weight: bold;
+}
+
+header .header_top .welcome .bottom img {
+    width: 10px;
+    margin-left: 3px;
+}
+
+/* cart */
+header .header_top .cart {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header_top .cart .icon_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header .header_top .cart .icon_container img {
+    width: 40px;
+}
+
+header .header_top .cart .icon_container span {
+    color: orange;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+header .header_top .cart span {
+    font-weight: bold;
+}
+
+header .header_top .cart span img {
+    width: 10px;
+}
+
+header .header_bottom {
+    height: 40px;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Amazon_medium';
+}
+
+header .header_bottom ul {
+    list-style: none;
+    margin: 0;
+    color: white;
+    display: flex;
+    font-size: 0.7rem;
+}
+
+header .header_bottom ul li {
+    margin-right: 10px;
+}
+
+header .header_bottom ul li:hover {
+    color: orange;
+}
+
+/********************* HEADING SECTION *********************/
+section#heading {
+    padding: 30px 0;
+    display: flex;
+}
+
+section#heading .img_part {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#heading .img_part .imgs_container {
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+section#heading .img_part .imgs_container .small_imgs {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 5px;
+}
+
+section#heading .img_part .imgs_container .small_imgs img {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+section#heading .img_part .imgs_container .main_img {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#heading .img_part .imgs_container .main_img img {
+    width: 93%
+}
+
+section#heading .infos {
+    width: 70%;
+    padding-left: 10px;
+}
+
+section#heading .infos .heading h1 {
+    margin: 0;
+}
+
+section#heading .infos .heading span {
+    font-size: 14px;
+}
+
+section#heading .infos .heading .stars_container {
+    margin-top: 15px;
+    width: fit-content;
+}
+
+section#heading .infos .heading .stars_container img {
+    width: 13px;
+}
+
+section#heading .infos .details {
+    margin-top: 20px;
+}
+
+section#heading .infos .details .stock {
+    display: flex;
+    flex-direction: column;
+}
+
+section#heading .infos .details .stock span.available {
+    color: green
+}
+
+section#heading .infos .list ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/********************* FREQUENTLY BUY SECTION *********************/
+section#hobbies .item_container {
+    display: flex;
+    align-items: center;
+}
+
+section#hobbies .item_container .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+section#hobbies .item_container span {
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+section#hobbies .item_container .item img {
+    width: 60px;
+}
+
+section#hobbies .item_container .item h3 {
+    margin: 0;
+}
+
+section#hobbies .item_container button {
+    background-color: #ffa41c;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 20px;
+    margin-left: 20px;
+}
+
+section#hobbies .item_container button:hover {
+    background-color: #f7b550;
+}
+
+/********************* DETAILS SECTION *********************/
+section#details .stars_container {
+    width: fit-content;
+}
+
+section#details ul {
+    list-style: none;
+}
+
+section#details ul.first li {
+    margin-bottom: 10px;
+}
+
+section#details ul li.stars {
+    display: flex;
+}
+
+section#details ul li.stars strong {
+    margin-left: 3px;
+}
+
+section#details ul li::before {
+    content: "◆";
+}
+
+section#details ul li ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin: 0;
+}
+
+section#details ul li ul li::before {
+    content: "";
+}
+
+section#details .stars_container {
+    margin-left: 10px;
+}
+
+section#details .stars_container img {
+    width: 13px;
+}
+
+section#details .missing {
+    display: flex;
+    align-items: baseline;
+}
+
+section#details .missing a {
+    margin-left: 10px;
+}
+
+/********************* COMMENTS SECTION *********************/
+/* section#comments .comments_container .item {
+    width: 150px;
+} */
+
+section#comments .comments_container .item {
+    margin-bottom: 30px;
+}
+
+section#comments .comments_container .item .heading {
+    display: flex;
+    align-items: center;
+}
+
+section#comments .comments_container .item img {
+    width: 50px;
+}
+
+section#comments .comments_container .item h3 {
+    margin-left: 10px;
+}
+
+section#comments .comments_container .item .rating img {
+    width: 13px;
+}
+
+section#comments .comments_container .item p {
+    margin-top: 5px;
+}
+
+/* CONTACT SECTION */
+section#contact {
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 8px;
+}
+
+section#contact .form-group {
+    margin-bottom: 15px;
+}
+
+section#contact label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section#contact input, section#contact textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+section#contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+section#contact button:hover {
+    background-color: rgb(239, 156, 73);
+}
+
+#formMessage {
+    display: none;
+    color: white;
+    margin: 10px 0;
+    background-color: #338a33;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 767px) {
+    main section {
+        margin-left: 0;
+        padding-left: 30px !important;
+    }
+
+    /* HEADER */
+    header .header_top .logo_container span {
+        font-size: 1.5rem;
+    }
+
+    header .header_top .logo_container img {
+        width: 67px;
+        left: 18%;
+    }
+
+    header .header_top .location span {
+        text-align: center;
+        font-size: 0.6rem;
+    }
+
+    header .header_top .welcome {
+        font-size: 0.6rem;
+    }
+
+    header .header_top .welcome .bottom img {
+        margin-left: 0;
+    }
+
+    header .header_top .cart .icon_container img {
+        width: 20px;
+    }
+
+    header .header_top .cart .icon_container span {
+        top: 27.5px;
+        font-size: 0.5rem;
+    }
+
+    header .header_top .cart span {
+        font-size: 0.6rem;
+    }
+
+    header .header_top .cart span img {
+        width: 8px;
+    }
+
+    /* HEADING SECTION */
+    section#heading {
+        flex-direction: column;
+    }
+
+    section#heading .img_part {
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    section#heading .infos {
+        width: 100%;
+    }
+
+    /* DETAILS SECTION */
+    section#details .missing {
+        flex-direction: column;
+    }
+
+    section#details .missing p {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    /* HEADER */
+    header .header_top .welcome {
+        font-size: 0.7rem;
+    }
+
+    header .header_top .cart .icon_container img {
+        width: 30px;
+    }
+
+    header .header_top .cart .icon_container span {
+        top: 23px;
+        font-size: 0.7rem;
+    }
+
+    header .header_top .cart span {
+        font-size: 0.7rem;
+    }
+
+    header .header_top .cart span img {
+        width: 7px;
+    }
+}
+
