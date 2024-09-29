@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Amazon_thin';
-    src: url('/assets/font/Ember/AmazonEmber_Lt.ttf') format('truetype');
+    src: url('assets/font/Ember/AmazonEmber_Lt.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Amazon_medium';
-    src: url('/assets/font/Ember/Amazon-Ember-Medium.ttf') format('truetype');
+    src: url('assets/font/Ember/Amazon-Ember-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Amazon_bold';
-    src: url('/assets/font/Ember/AmazonEmber_Bd.ttf') format('truetype');
+    src: url('assets/font/Ember/AmazonEmber_Bd.ttf') format('truetype');
 }
 body, html {
     margin: 0;
