@@ -72,28 +72,8 @@ header .header_top .logo_container {
     height: 100%;
 }
 
-header .header_top .logo_container .name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header .header_top .logo_container .name span:last-child {
-    margin-left: 5px;
-}
-
-header .header_top .logo_container span {
-    color: white;
-    font-size: 1.3rem !important;
-    font-family: 'Amazon_bold';
-}
-
 header .header_top .logo_container img {
-    position: absolute;
-    width: 70px;
-    top: 64%;
-    left: 12%;
+    width: 80%;
 }
 
 /* location */
@@ -334,6 +314,7 @@ section#hobbies .container {
 section#hobbies .item_container {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 section#hobbies .item_container .item {
@@ -532,6 +513,32 @@ section#contact button:hover {
     border-radius: 8px;
 }
 
+@media (max-width: 630px) {
+    header .header_top .location, header .header_top .welcome {
+        display: none;
+    }
+
+    header .header_top .logo_container {
+        width: 22%;
+    }
+
+    header .header_top .search_bar {
+        width: 45%;
+    }
+
+    header .header_top .search_bar .bar_container input {
+        width: 100%;
+    }
+
+    section#hobbies .item_container .item img {
+        width: 40px;
+    }
+
+    section#hobbies .item_container .item h3 {
+        font-size: 0.75rem;
+    }
+}
+
 
 @media (max-width: 767px) {
     main section {
@@ -540,14 +547,6 @@ section#contact button:hover {
     }
 
     /* HEADER */
-    header .header_top .logo_container span {
-        font-size: 1.5rem;
-    }
-
-    header .header_top .logo_container img {
-        width: 67px;
-        left: 18%;
-    }
 
     header .header_top .location span {
         text-align: center;
@@ -600,17 +599,6 @@ section#contact button:hover {
 
     section#details .missing p {
         margin-bottom: 0;
-    }
-}
-
-@media (max-width: 935px) {
-    header .header_top .logo_container span {
-        font-size: 1rem !important;
-    }
-
-    header .header_top .logo_container img {
-        width: 67px;
-        left: 1%;
     }
 }
 
