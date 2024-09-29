@@ -12,12 +12,15 @@
     font-family: 'Amazon_bold';
     src: url('/assets/font/Ember/AmazonEmber_Bd.ttf') format('truetype');
 }
-
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Amazon_thin';
     scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
 }
 
 strong {
@@ -69,16 +72,28 @@ header .header_top .logo_container {
     height: 100%;
 }
 
+header .header_top .logo_container .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .header_top .logo_container .name span:last-child {
+    margin-left: 5px;
+}
+
 header .header_top .logo_container span {
     color: white;
-    font-size: 2rem;
+    font-size: 1.3rem !important;
+    font-family: 'Amazon_bold';
 }
 
 header .header_top .logo_container img {
     position: absolute;
-    width: 80px;
+    width: 70px;
     top: 64%;
-    left: 17%;
+    left: 12%;
 }
 
 /* location */
@@ -87,7 +102,7 @@ header .header_top .location {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 header .header_top .location span {
@@ -309,6 +324,13 @@ section#heading .infos .list ul {
 }
 
 /********************* FREQUENTLY BUY SECTION *********************/
+section#hobbies .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
 section#hobbies .item_container {
     display: flex;
     align-items: center;
@@ -335,7 +357,11 @@ section#hobbies .item_container .item h3 {
     margin: 0;
 }
 
-section#hobbies .item_container button {
+section#hobbies .get_all_button a {
+    margin: auto;
+}
+
+section#hobbies .get_all_button button {
     background-color: #ffa41c;
     border: none;
     border-radius: 16px;
@@ -343,7 +369,7 @@ section#hobbies .item_container button {
     margin-left: 20px;
 }
 
-section#hobbies .item_container button:hover {
+section#hobbies .get_all_button button:hover {
     background-color: #f7b550;
 }
 
@@ -401,33 +427,59 @@ section#details .missing a {
 }
 
 /********************* COMMENTS SECTION *********************/
-/* section#comments .comments_container .item {
-    width: 150px;
-} */
-
-section#comments .comments_container .item {
-    margin-bottom: 30px;
+section#comments {
+    position: relative;
+    overflow: hidden;
 }
 
-section#comments .comments_container .item .heading {
+section#comments .swiper-container {
+    padding-bottom: 70px;
+}
+
+section#comments .item {
+    text-align: center;
+}
+
+section#comments .item .heading {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
 }
 
-section#comments .comments_container .item img {
-    width: 50px;
+section#comments .item img {
+    width: 32px;
+    margin-right: 10px;
 }
 
-section#comments .comments_container .item h3 {
-    margin-left: 10px;
-}
-
-section#comments .comments_container .item .rating img {
+section#comments .item .rating img {
     width: 13px;
 }
 
-section#comments .comments_container .item p {
-    margin-top: 5px;
+section#comments .swiper-wrapper {
+    padding-bottom: 60px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: unset !important;
+    display: block !important;
+}
+
+.swiper-button-prev {
+    left: 40% !important;
+}
+
+.swiper-button-next {
+    right: 40% !important;
+}
+
+.swiper-slide {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
 }
 
 /* CONTACT SECTION */
@@ -551,10 +603,25 @@ section#contact button:hover {
     }
 }
 
+@media (max-width: 935px) {
+    header .header_top .logo_container span {
+        font-size: 1rem !important;
+    }
+
+    header .header_top .logo_container img {
+        width: 67px;
+        left: 1%;
+    }
+}
+
 @media (min-width: 767px) and (max-width: 1024px) {
     /* HEADER */
     header .header_top .welcome {
         font-size: 0.7rem;
+    }
+
+    header .header_top .location span {
+        font-size:0.7rem;
     }
 
     header .header_top .cart .icon_container img {
